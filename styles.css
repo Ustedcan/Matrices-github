@@ -1,4 +1,4 @@
-/*General*/
+/* General */
 body {
   font-family: Prompt, sans-serif;
   background-color: #f4f4f4;
@@ -8,8 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: flex-start; /* Para no centrar verticalmente toda la página */
+  height: auto; /* Cambié a auto para que no ocupe toda la altura de la ventana */
 }
 
 /* Contenedor con un ancho máximo */
@@ -20,10 +20,31 @@ body {
   padding: 20px; /* Espacio interno */
 }
 
-/*Header*/
+/* Contenedor con un ancho máximo */
+.container2 {
+  max-width: 400px; /* Ancho máximo */
+  width: 100%; /* Para asegurar que ocupe el 100% en pantallas pequeñas */
+  margin: 20px; /* Márgenes internos */
+  padding: 10px; /* Espacio interno ajustado */
+}
+
+/* Header */
 h1 {
-  color: #;
+  color: #333; /* Color de texto */
   font-size: 36px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Reducido el espacio abajo del encabezado */
+}
+
+/* Párrafos */
+p {
+  margin: 0; /* Eliminar márgenes innecesarios */
+  padding: 0; /* Eliminar padding */
+  line-height: 1.5; /* Aumentar el interlineado para mejorar la legibilidad */
+  text-align: justify; /* Justificar texto */
+}
+
+/* Matriz LaTeX en contenedor */
+.container2 p {
+  margin-top: 20px; /* Reducir espacio arriba de la matriz */
 }
